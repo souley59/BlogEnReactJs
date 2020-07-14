@@ -1,0 +1,152 @@
+ @font-face {
+  font-family: 'saaho_fontregular';
+  src:url('fonts/saaho-font.ttf');
+   /* url('fonts/saaho-font-webfont.woff2') format('woff2'),
+       url('fonts/saaho-font-webfont.woff') format('woff'); */
+  font-weight: normal;
+  font-style: normal;
+ 
+}
+
+body{height: 100%;}
+.App {
+  text-align: center;
+  background: #d4e4ef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #d4e4ef 0%, #86aecc 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #d4e4ef 0%, #86aecc 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#d4e4ef', endColorstr='#86aecc', GradientType=0);
+  /* IE6-9 */
+  height: 100%;
+  margin-bottom: 0;
+  padding: 0%;
+}
+
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+span{
+  text-decoration: underline;
+  font-weight: bold;
+  color: rgb(42, 72, 107);
+}
+#MAIL{
+  font-style: oblique;
+  text-decoration: none;
+  font-weight: normal;
+}
+#containerUsers, #colUsers{
+  padding: 0%;
+}
+
+#Titre {
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+   font-family: 'saaho_fontregular', arial;
+  font-size: 100px;
+  text-transform: uppercase;
+  /* -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;*/ 
+  padding-top: 5%;
+} 
+#Titre {
+  color: rgb(42, 72, 107);
+  color: -moz-linear-gradient(left, rgba(42, 72, 107, 1) 0%, rgba(80, 122, 167, 1) 100%);
+  color: -webkit-linear-gradient(left, rgba(42, 72, 107, 1) 0%, rgba(80, 122, 167, 1) 100%);
+  color: linear-gradient(to right, rgba(42, 72, 107, 1) 0%, rgba(80, 122, 167, 1) 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#2a486b', endColorstr='#507aa7', GradientType=1);
+  background-size: cover;
+  }
+
+.users, .posts  {
+  display: flex;
+  flex-direction: row-fluid;
+  width: 30%;
+  text-align:left;
+  justify-content: space-around;
+  margin: auto;
+  margin-bottom: 3%;
+  height:150px;
+} 
+
+.posts{
+  height: 300px;
+}
+img, .image {
+  
+  border-radius: 5px;
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+
+}            
+
+@media screen and (min-width: 750px) and (max-width: 1040px) {
+.users{
+  width: 45%;
+  height: 120px;
+}
+.posts{
+  width: 45%;
+  height: 320px;
+}
+img, .image{
+  width: 75px;
+  height: 75px;
+  padding: 0px;
+}
+#Titre{
+  font-size: 50px;
+}
+
+}
+@media screen and (max-width: 749px){
+  .users{
+    width: 90%;
+    height: 180px;
+  }
+  .posts{
+    width: 90%;
+    height: 350px;
+  }
+  img, .image{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    padding: 0px;
+  }
+  #Titre{
+    font-size: 50px;
+  }
+  .infos{
+    width: 60%;
+  }
+
+}
